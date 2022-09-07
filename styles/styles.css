@@ -291,7 +291,14 @@ padding-left: 0px;
 padding-right: 0px;
 background-color: var(--portfolio-background-color);
 }
-
+.our-team-text {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+}
 .list-item-employees {
     list-style: none;
     text-decoration: none;
@@ -361,12 +368,24 @@ padding-bottom: 94px;
  }
 
 .list-item-portfolio {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    justify content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+list-style: none;
+text-decoration: none;
+display: flex;
+justify content: center;
+flex-wrap: wrap;
+gap: 30px;
+}
+.list-cards {
+list-style: none;
+text-decoration: none;
+}
+.cards-link {
+list-style: none;
+text-decoration: none;
+display: block;
+}
+.cards-link:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
  .button-position {
@@ -379,12 +398,12 @@ gap: 8px;
  }
  
 .title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+text-align: left;
 letter-spacing: 0.03em;
-color: var(--primary-text-color);
+color: var(--gray-text-color);
 }
 .projects {
 font-weight: 700;
@@ -409,6 +428,9 @@ background-color : var(--portfolio-btn);
 .portfolio-button:focus {
 color: var(--secondary-text-color);
 background-color: var(--accent-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+ 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cards-poster {
@@ -447,9 +469,14 @@ height: 60px;
 fill: #AFB1B8;
 }
 
-.brends-list:hover, .brends-list:focus {
-color: var(--accent-color);
-background-color: #FFFFFF;
+.brends-list-link:hover,
+.brends-list-link:focus {
+background-color: F5F5F5;
+}
+
+.icon:hover,
+.icon:focus {
+fill: var(--accent-color);
 }
 
  /* footer */
@@ -545,8 +572,12 @@ height: 44px;
 border-radius: 50%;
 background: rgba(255, 255, 255, 0.1);
 }
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
     background-color: var(--accent-color);
+}
+.social-list-icon:hover,
+.social-list-icon:focus {
+fill: var(--secondary-text-color);
 }
   /* fFooter */
