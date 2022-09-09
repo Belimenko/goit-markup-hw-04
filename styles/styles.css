@@ -122,6 +122,14 @@ color: var(--accent-color);
 color: var(--accent-color);
 }
 
+.enveloup-link {
+margin-right: 10px;
+fill: currentColor;
+}
+.phone-link {
+margin-right: 10px;
+fill: currentColor;
+}
 .phone-link:hover {
 fill: var(--accent-color);
 }
@@ -144,12 +152,19 @@ list-style: none;
 text-decoration: none;
 color: var(--primary-text-color);
 }
-
+.e-mail {
+    color: var(--gray-text-color);
+}
 .fhone-number {
 color: var(--gray-text-color)
 }
 .e-mail {
-color: var(--gray-text-color);
+display: flex;
+align-items: center;
+}
+.fhone-number {
+display: flex;
+align-items: center;
 }
 
 /* hero */
@@ -209,8 +224,8 @@ margin-right: auto;
 
 /* feature */
 .advantage-list {
-display: flex;  
-   
+display: flex;
+gap: 30px
 }
 .item-feature {
 justify-content: space-between;
@@ -220,12 +235,9 @@ display: flex;
 width: 270px;
 height: 120px;
 justify-content: center;
-padding-left: 15px;
-padding-right: 15px;
 margin-bottom: 30px;
 background: #F5F4FA;
 border-radius: 4px;
-gap: 30px;
 }
 .visually-hidden {
     position: absolute;
@@ -246,9 +258,6 @@ padding-bottom: 0px;
 
 .feature {
 display: block;
-width: 300px;
-padding-left: 15px;
-padding-right: 15px;
 margin-bottom: 10px;
 font-weight: 700;
 font-size : 14px;
@@ -260,9 +269,6 @@ color: var(--primary-text-color);
 
 .features-text {
 display: block;
-width: 300px;
-padding-left: 15px;
-padding-right: 15px;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
